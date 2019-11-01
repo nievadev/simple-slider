@@ -3,7 +3,7 @@ let index = 0;
 
 sliders[index].style.display = "block";
 
-document.body.addEventListener("keydown", event => {
+window.onkeydown = function(event) {
     if (event.key == "ArrowRight")
     {
         nextSlide(1);
@@ -13,7 +13,7 @@ document.body.addEventListener("keydown", event => {
     {
         nextSlide(-1);
     }
-});
+}
 
 function nextSlide(val)
 {
