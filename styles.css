@@ -19,6 +19,7 @@ body {
 
 img {
     width: 100%;
+    display: none;
 }
 
 .btn {
@@ -44,7 +45,7 @@ img {
 
 .btn svg {
     height: 6rem;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .5);
     transition: color 0.2s;
 }
 
