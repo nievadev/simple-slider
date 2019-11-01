@@ -25,6 +25,9 @@ img {
     position: absolute;
     display: block;
     align-self: center;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:first-child {
@@ -33,4 +36,18 @@ img {
 
 .btn:last-child {
     right: 0;
+}
+
+.btn:last-child > svg {
+    transform: rotateZ(180deg);
+}
+
+.btn svg {
+    height: 6rem;
+    color: rgba(255, 255, 255, .7);
+    transition: color 0.2s;
+}
+
+.btn:hover svg {
+    color: rgba(255, 255, 255, 1);
 }
