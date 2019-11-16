@@ -9,18 +9,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #3a3a3a;
+    background-color: #000;
 }
 
-.slides-container {
-    width: 70%;
-    position: relative;
-    display: flex;
-}
-
-img {
-    width: 100%;
+.slide {
     display: none;
+    width: 30vw;
+}
+
+.full-screen {
+    width: 80vw;
 }
 
 .btn {
@@ -52,4 +50,12 @@ img {
 
 .btn:hover svg {
     color: rgba(255, 255, 255, 1);
+}
+
+.low-res > .slide {
+    width: 60vw;
+}
+
+.low-res > .full-screen {
+    width: 100vw;
 }

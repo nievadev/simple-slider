@@ -1,0 +1,56 @@
+# Obj: dar introducción a curses y blessings
+# no programar en vivo
+# presentar primero lo general luego los detalles
+# https://en.wikipedia.org/wiki/ANSI_escape_code
+# https://en.wikipedia.org/wiki/Terminfo
+# https://en.wikipedia.org/wiki/Termcap
+# https://www.youtube.com/watch?v=xGDd9higrzM
+# Investigar tput
+# https://www.youtube.com/watch?v=eN1eZtjLEnU Use curses, don't swear
+# https://www.youtube.com/watch?v=riZ11MM8LGI
+# https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals
+
+# top tig pudb 
+
+ TERMINAL SCRIPTING
+whoami: Martin Nieva
+
+# ¿a qué me refiero con terminal scripting? 
+# bueno, fue el nombre que se me ocurrió ponerle a la creación de software el cual corre en un emulador de terminal
+
+# que es el emulador de terminal?
+# mostrarlo
+
+Foto de un mate-terminal
+
+# en gaucho seria una caja bidimensional en la cual ingresamos datos y obtenemos resultados
+# un unos momentos voy a explicar muchisimo mejor este concepto
+
+# elaborate later
+    # bueno, el concepto de terminal surge con la creación de la VT50 en 1974 *muestra una foto de la maquina*, entonces una terminal en realidad seria un dispositivo en el cual mediante un teclado ingresabas comandos cuyos resultados se observaban en la pantalla
+    # que fue reemplazada en 1975 por la VT52 que tenia unas cuantas mejoras (poder scrollear, 80x24 columnas y filas, lenguaje que permitia al cursor moverse a lo largo de la pantalla)
+    # entonces con terminal nos referimos a un teclado conectado a una pantalla
+# end elaborate
+
+¿Qué vamos a usar?
+  import curses # que es, por que usar curses, por que no usar curses
+ import blessings # que es
+
+¿Qué podemos hacer? Las posibilidades son "infinitas" # infinitas entre comillas, porque los emuladores tienen ciertas limitaciones
+# cuáles son nuestras limitaciones
+- No keyup ni keydown # que son esas cosas - asi que no podemos saber cuanto presionamos una tecla, lo que significaria que no podemos efectuar eventos mientras presionamos algo
+- Solo pseudo 3D # por que y que es
+# poner mas cosas
+
+# mostrar ejemplos
+# dos tipos de softwares de terminal: 
+# mostrar diagrama que explica lo que hacen estos dos tipos de software, como el de thomas ballinger
+
+
+
+
+# voy a enseñar esto y esto
+# podemos empezar directamente a programar con curses sin saber esto
+# o sea, no es necesario
+# pero tampoco es necesario saber <inserte comparacion>, no es asi?
+# comenzar a enseñarlo
