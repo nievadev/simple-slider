@@ -1,0 +1,4 @@
+markdown: redcarpet
+livereload: true
+baseurl: /simple-slider
+permalink: pretty
