@@ -16,7 +16,25 @@
 whoami: Martin Nieva
 
 # ¿a qué me refiero con terminal scripting? 
-# bueno, fue el nombre que se me ocurrió ponerle a la creación de software el cual corre en un emulador de terminal
+# bueno le puse así a la creación de software para terminal
+
+# poner ejemplo ¿que softwares?
+programa sencillo que pregunta nombres
+
+ls # coreutils
+cat # coreutils
+
+tig
+vim
+
+# Entre estos programas hay algo que los distingue.
+# En ls y cat nosotros ingresamos un 
+
+# Entonces lo que podemos ver acá son un montón de caracteres que están ordenados de modo que parezca una interfaz gráfica, pero en realidad no lo es, son sólo caracteres
+
+print("\x7a") # Prints 'z', \x7a is the ASCII code for 'z'
+print("\x1b[31m") # Sets terminal color to RED, since \x1b is the ASCII code for ESCAPE
+\x escape sequence means that the next two characters will be interpreted as hex digits
 
 # que es el emulador de terminal?
 # mostrarlo
@@ -26,15 +44,11 @@ Foto de un mate-terminal
 # en gaucho seria una caja bidimensional en la cual ingresamos datos y obtenemos resultados
 # un unos momentos voy a explicar muchisimo mejor este concepto
 
-# elaborate later
-    # bueno, el concepto de terminal surge con la creación de la VT50 en 1974 *muestra una foto de la maquina*, entonces una terminal en realidad seria un dispositivo en el cual mediante un teclado ingresabas comandos cuyos resultados se observaban en la pantalla
-    # que fue reemplazada en 1975 por la VT52 que tenia unas cuantas mejoras (poder scrollear, 80x24 columnas y filas, lenguaje que permitia al cursor moverse a lo largo de la pantalla)
-    # entonces con terminal nos referimos a un teclado conectado a una pantalla
-# end elaborate
-
 ¿Qué vamos a usar?
   import curses # que es, por que usar curses, por que no usar curses
  import blessings # que es
+
+Empecemos.
 
 ¿Qué podemos hacer? Las posibilidades son "infinitas" # infinitas entre comillas, porque los emuladores tienen ciertas limitaciones
 # cuáles son nuestras limitaciones
@@ -46,11 +60,21 @@ Foto de un mate-terminal
 # dos tipos de softwares de terminal: 
 # mostrar diagrama que explica lo que hacen estos dos tipos de software, como el de thomas ballinger
 
-
-
-
 # voy a enseñar esto y esto
 # podemos empezar directamente a programar con curses sin saber esto
 # o sea, no es necesario
 # pero tampoco es necesario saber <inserte comparacion>, no es asi?
 # comenzar a enseñarlo
+
+# elaborate later "terminal concept"
+    # bueno, el concepto de terminal surge con la creación de la VT50 en 1974 *muestra una foto de la maquina*, entonces una terminal en realidad seria un dispositivo en el cual mediante un teclado ingresabas comandos cuyos resultados se observaban en la pantalla
+    # que fue reemplazada en 1975 por la VT52 que tenia unas cuantas mejoras (poder scrollear, 80x24 columnas y filas, lenguaje que permitia al cursor moverse a lo largo de la pantalla)
+    # entonces con terminal nos referimos a un teclado conectado a una pantalla
+# end elaborate
+
+# elaborate later "curses"
+    # Es una libreria  ya incorporada en Python que nos provee múltiples utilidades, tales son
+    # keyboard-handling -> getch()
+    # screen-painting
+    # Todo es terminal-independiente
+# end elaborate

@@ -3,7 +3,7 @@ let index = 0;
 
 sliders[index].style.display = "block";
 
-window.onkeydown = function(event) {
+window.onkeydown = event => {
     if (event.key == "ArrowRight")
     {
         nextSlide(1);
@@ -12,6 +12,11 @@ window.onkeydown = function(event) {
     else if (event.key == "ArrowLeft")
     {
         nextSlide(-1);
+    }
+
+    else if (event.key == "ArrowUp")
+    {
+        document.body.classList.toggle("no-cursor");
     }
 }
 

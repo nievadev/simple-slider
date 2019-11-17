@@ -21,6 +21,10 @@ body {
     width: 80vw;
 }
 
+.no-cursor {
+    cursor: none;
+}
+
 .btn {
     position: absolute;
     display: block;
