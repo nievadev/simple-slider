@@ -15,16 +15,20 @@
  TERMINAL SCRIPTING
 whoami: Martin Nieva
 
-# ¿a qué me refiero con terminal scripting? 
-# bueno le puse así a la creación de software para terminal
+Introduccion
 
-# poner ejemplo ¿que softwares?
+¿Terminal Scripting?
+# bueno como vieron en el titulo el tema vendria a ser terminal scripting
+# que es basicamente hacer softwares para la terminal, por eso le puse ese nombre
+
+Mostrar mate-terminal
+
+# poner ejemplo ¿que softwares? Cualquiera, desde...
 programa sencillo que pregunta nombres
 
+# Otro ejemplo vendria a ser los siguientes programas
+Otros ejemplos
 ls # coreutils
-cat # coreutils
-
-tig
 vim
 
 # Entre estos programas hay algo que los distingue.
@@ -39,8 +43,6 @@ print("\x1b[31m") # Sets terminal color to RED, since \x1b is the ASCII code for
 # que es el emulador de terminal?
 # mostrarlo
 
-Foto de un mate-terminal
-
 # en gaucho seria una caja bidimensional en la cual ingresamos datos y obtenemos resultados
 # un unos momentos voy a explicar muchisimo mejor este concepto
 
@@ -48,7 +50,7 @@ Foto de un mate-terminal
   import curses # que es, por que usar curses, por que no usar curses
  import blessings # que es
 
-Empecemos.
+Fin de la introducción
 
 ¿Qué podemos hacer? Las posibilidades son "infinitas" # infinitas entre comillas, porque los emuladores tienen ciertas limitaciones
 # cuáles son nuestras limitaciones
@@ -67,7 +69,8 @@ Empecemos.
 # comenzar a enseñarlo
 
 # elaborate later "terminal concept"
-    # bueno, el concepto de terminal surge con la creación de la VT50 en 1974 *muestra una foto de la maquina*, entonces una terminal en realidad seria un dispositivo en el cual mediante un teclado ingresabas comandos cuyos resultados se observaban en la pantalla
+    # hacerlo con un punto "No es una terminal. "
+    # bueno, a que me refiero con un emulador de terminal? primero tenemos que entender que es una terminal. la gente suele llamar terminal a esto, pensando erroneamente que lo es cuando en realidad solo es un emulador. Creacion de VT50 en 1974 *muestra una foto de la maquina*, entonces una terminal en realidad seria un dispositivo en el cual mediante un teclado ingresabas comandos cuyos resultados se observaban en la pantalla
     # que fue reemplazada en 1975 por la VT52 que tenia unas cuantas mejoras (poder scrollear, 80x24 columnas y filas, lenguaje que permitia al cursor moverse a lo largo de la pantalla)
     # entonces con terminal nos referimos a un teclado conectado a una pantalla
 # end elaborate
