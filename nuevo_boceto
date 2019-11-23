@@ -1,0 +1,38 @@
+       Welcome
+
+ TERMINAL SCRIPTING
+    PyConAr 2019
+
+whoami: Martin Nieva
+
+Introduccion
+
+¿Terminal Scripting? # Explicar a que me refiero
+
+# Asi que bueno, echemos un vistazo a dos softwares MUY conocidos.
+Echemos un vistazo
+- ls # Es una utilidad de unix que nos devuelve una salida en la cual observamos los directorios y archivos que hay dentro del directorio en el cual estamos
+- top # Es un software que usamos para manipular los procesos que estan corriendo en el momento
+
+# Como podemos observar, ls y top trabajan de forma diferente.
+# En ls, ingresamos un comando y nos devuelve un output.
+# Por otro lado, en top nosotros ingresamos un comando y una nueva terminal dentro de nuestra terminal aparece con una tabla de datos que se va actualizando sin que nosotros tengamos que ingresar alguna entrada. 
+
+# Aca es donde introducimos a curses
+import curses
+
+# Y blessings
+import curses
+import blessings
+
+# Pero primero hablemos de curses
+import curses # curses es un wrapper en python de una libreria de c
+
+# quizas no
+    - vim # Es un software que usamos para la lectura y edicion de archivos, principalmente para la edicion ya que para lectura generalmente se usa cat
+
+    # Podemos observar que ls y vim trabajan de manera distinta al usarlos. 
+
+    # Mostrar diagrama de ls
+
+    # Mostrar diagrama de vim

@@ -32,7 +32,9 @@ ls # coreutils
 vim
 
 # Entre estos programas hay algo que los distingue.
-# En ls y cat nosotros ingresamos un 
+# Cuando usamos ls, la terminal nos regresa un output con la informacion deseada e inmediatamente podemos seguir trabajando en nuestra terminal. En cambio, cuando usamos vim, algo raro pasa: una nueva terminal se abre. Pero no una nueva ventana, sino una nueva terminal dentro de la terminal de donde ejecutamos vim. Y no solo eso, sino que cuando queremos salir de vim tenemos que escribir una serie de caracteres. 
+
+# Y aca es donde introducimos a curses
 
 # Entonces lo que podemos ver acá son un montón de caracteres que están ordenados de modo que parezca una interfaz gráfica, pero en realidad no lo es, son sólo caracteres
 
