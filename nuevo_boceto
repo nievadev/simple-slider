@@ -1,3 +1,6 @@
+# 20 minutos -> total
+# Intro -> 5 minutos
+
        Welcome
 
  TERMINAL SCRIPTING
@@ -9,6 +12,19 @@ Introduccion
 
 ¿Terminal Scripting? # Explicar a que me refiero
 
+# Y bueno, asi introducimos a la libreria curses
+import curses # En esta charla les voy a dar una introduccion a curses
+
+# Y a blessings
+import curses
+import blessings
+# Asi que esos vendrian a ser los protagonistas
+
+# Ahora, los personajes secundarios
+terminfo <- terminfo
+TERM
+Escape Sequences
+
 # Asi que bueno, echemos un vistazo a dos softwares MUY conocidos.
 Echemos un vistazo
 - ls # Es una utilidad de unix que nos devuelve una salida en la cual observamos los directorios y archivos que hay dentro del directorio en el cual estamos
@@ -18,15 +34,24 @@ Echemos un vistazo
 # En ls, ingresamos un comando y nos devuelve un output.
 # Por otro lado, en top nosotros ingresamos un comando y una nueva terminal dentro de nuestra terminal aparece con una tabla de datos que se va actualizando sin que nosotros tengamos que ingresar alguna entrada. 
 
-# Aca es donde introducimos a curses
-import curses
+import curses # bueno, entonces, curses es una libreria
+- Built-in # ya suele venir en python, pero solo en Linux
+- Manejo de teclado -> getch() # Podemos controlar el flujo de nuestro programa a traves de caracteres ingresados por el usuario, sin necesidad de presionar enter
+- Manipulación de cursor -> stdscr.move(y, x)
+- Colores -> init_pair(), color_pair() # Curses nos provee pares de colores, con los cuales podemos decidir a nuestro antojo el color del texto sin tener que acceder a terminfo o usar secuencias de escape
+- Obtención de atributos -> stdscr.getmaxyx() # Podemos obtener informacion tal como la altura y el ancho
+- Livianísimo
+- cbreak & raw # Mediante curses podemos facilmente determinar si queremos a la terminal en modo cbreak y raw (por default la terminal esta en cooked)
+- Acceder a terminfo -> tparm(), tigetstr() y putp() # Curses nos provee una amplia gama de funciones mediante las cuales podemos acceder al terminfo y usar sus capacidades
 
-# Y blessings
-import curses
-import blessings
+import blessings # blessings es un modulo que nos facilita un monton de tareas
+- Está hecho con curses # Es un simple wrapper
+- Está en Pypi # Lo instalamos con pip
+- Manipulación del cursor # Lo podemos esconder y mover su posicion, mediante context managers, o sea, usando la keyword with
+- Colores -> Terminal().red_on_black("Hello!")
+- Obtención de atributos -> Terminal().height
 
-# Pero primero hablemos de curses
-import curses # curses es un wrapper en python de una libreria de c
+# Entonces, blessings nos ahorra muchisimo trabajo si queremos por ejemplo usar los colores, mover o esconder el cursor sin tener que acceder a terminfo a traves de curses
 
 # quizas no
     - vim # Es un software que usamos para la lectura y edicion de archivos, principalmente para la edicion ya que para lectura generalmente se usa cat
@@ -36,3 +61,4 @@ import curses # curses es un wrapper en python de una libreria de c
     # Mostrar diagrama de ls
 
     # Mostrar diagrama de vim
+

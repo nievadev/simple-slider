@@ -14,7 +14,8 @@ body {
 
 .slide {
     display: none;
-    width: 30vw;
+    min-width: 60px;
+    color: white;
 }
 
 .full-screen {

@@ -4,19 +4,18 @@ let index = 0;
 sliders[index].style.display = "block";
 
 window.onkeydown = event => {
-    if (event.key == "ArrowRight")
-    {
-        nextSlide(1);
-    }
+    switch (event.key) {
+        case "ArrowRight":
+            nextSlide(1);
+            break;
 
-    else if (event.key == "ArrowLeft")
-    {
-        nextSlide(-1);
-    }
+        case "ArrowLeft":
+            nextSlide(-1);
+            break;
 
-    else if (event.key == "ArrowUp")
-    {
-        document.body.classList.toggle("no-cursor");
+        case "ArrowUp":
+            document.body.classList.toggle("no-cursor");
+            break;
     }
 }
 
