@@ -1,0 +1,7 @@
+import curses
+
+stdscr = curses.initscr()
+
+curses.raw()
+
+curses.endwin()

@@ -1,6 +1,6 @@
 from blessings import Terminal
-
+ 
 t = Terminal()
 
-print(t.height)
-print(t.width)
+with t.location(10, 3):
+    print("Hola mundo")
